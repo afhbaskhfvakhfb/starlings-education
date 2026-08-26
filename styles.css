@@ -598,7 +598,7 @@ p {
 }
 
 .hero h1 {
-  color: var(--gold);
+  color: var(--white);
   font-size: var(--text-3xl);
   font-weight: 600;
   line-height: 1.3;
