@@ -509,6 +509,10 @@ p {
 }
 
 /* ---- Hero Section ---- */
+.hero > .container {
+  min-width: 0;
+}
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -1746,11 +1750,53 @@ a.contact-info__card:hover .contact-info__icon {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + var(--space-3xl));
+    padding-bottom: var(--space-3xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-lg);
+  }
+
+  .about-header,
+  .services-header,
+  .features-header,
+  .contact-header,
+  .legal-header {
+    padding: calc(var(--nav-height) + var(--space-2xl)) 0 var(--space-2xl);
+  }
+
+  .contact-form,
+  .about-founder__card {
+    padding: var(--space-xl);
+  }
+
+  .feature-detail,
+  .why-us__card,
+  .about-pillar,
+  .contact-info__card {
+    padding: var(--space-xl);
+  }
+
+  .enrollment__item {
+    padding: var(--space-md);
+  }
+
+  .service-row__content h3 {
+    font-size: var(--text-xl);
+  }
 }
 
 @media (max-width: 480px) {
   .hero__kicker { font-size: var(--text-4xl); }
   .hero h1 { font-size: var(--text-lg); }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
 
   .btn {
     padding: 12px 24px;
@@ -1759,5 +1805,15 @@ a.contact-info__card:hover .contact-info__icon {
 
   .why-us__grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-info__card {
+    flex-direction: column;
+  }
+
+  .about-founder__card::before {
+    font-size: 80px;
+    top: -10px;
+    left: 10px;
   }
 }
