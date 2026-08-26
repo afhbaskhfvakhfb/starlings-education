@@ -1096,6 +1096,114 @@ p {
   font-size: var(--text-sm);
 }
 
+/* ---- Carousel / Slideshow ---- */
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: var(--space-2xl) auto 0;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel__slide .about-pillar {
+  margin: 0;
+  text-align: center;
+  padding: var(--space-3xl) var(--space-2xl);
+}
+
+.carousel__slide .about-pillar h4 {
+  font-size: var(--text-2xl);
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  z-index: 2;
+  color: var(--burgundy);
+}
+
+.carousel__arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel__arrow:hover {
+  background: var(--burgundy);
+  color: var(--white);
+}
+
+.carousel__arrow--prev {
+  left: -22px;
+}
+
+.carousel__arrow--next {
+  right: -22px;
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+}
+
+.carousel__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--light-gray);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-base);
+}
+
+.carousel__dot.active {
+  background: var(--burgundy);
+  width: 28px;
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .carousel__arrow--prev {
+    left: 4px;
+  }
+
+  .carousel__arrow--next {
+    right: 4px;
+  }
+
+  .carousel__slide .about-pillar {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+}
+
 .about-vision {
   padding: var(--space-3xl) 0;
 }

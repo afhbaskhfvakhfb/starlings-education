@@ -90,22 +90,46 @@
         <h2>Why Choose Starlings?</h2>
         <p class="subtitle">Transitioning to homeschooling or online learning is a big step. We make that journey seamless and rewarding.</p>
       </div>
-      <div class="about-pillars__grid" style="grid-template-columns: repeat(2, 1fr);">
-        <div class="about-pillar fade-in">
-          <h4>📖 A Holistic Curriculum</h4>
-          <p>Designed for Grades 1 to Matric/O Levels, focusing on academic excellence alongside character development.</p>
+      <div class="carousel fade-in" id="whyChooseCarousel">
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <div class="about-pillar">
+                <h4>📖 A Holistic Curriculum</h4>
+                <p>Designed for Grades 1 to Matric/O Levels, focusing on academic excellence alongside character development.</p>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="about-pillar">
+                <h4>🎓 Expert Guidance</h4>
+                <p>Led by the experienced team behind the former Learners' Inn, bringing years of pedagogical expertise to the digital space.</p>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="about-pillar">
+                <h4>🐦 A Global Murmuration</h4>
+                <p>Like starlings in flight, our students learn the power of community, collaboration, and moving together toward a common goal.</p>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="about-pillar">
+                <h4>✨ Flexible Excellence</h4>
+                <p>Premium education that fits your family's lifestyle without compromising on the quality of a traditional grammar school.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-pillar fade-in" style="transition-delay: 0.1s">
-          <h4>🎓 Expert Guidance</h4>
-          <p>Led by the experienced team behind the former Learners' Inn, bringing years of pedagogical expertise to the digital space.</p>
-        </div>
-        <div class="about-pillar fade-in" style="transition-delay: 0.2s">
-          <h4>🐦 A Global Murmuration</h4>
-          <p>Like starlings in flight, our students learn the power of community, collaboration, and moving together toward a common goal.</p>
-        </div>
-        <div class="about-pillar fade-in" style="transition-delay: 0.3s">
-          <h4>✨ Flexible Excellence</h4>
-          <p>Premium education that fits your family's lifestyle without compromising on the quality of a traditional grammar school.</p>
+        <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="carousel__arrow carousel__arrow--next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="carousel__dots">
+          <button class="carousel__dot" aria-label="Go to slide 1"></button>
+          <button class="carousel__dot" aria-label="Go to slide 2"></button>
+          <button class="carousel__dot" aria-label="Go to slide 3"></button>
+          <button class="carousel__dot" aria-label="Go to slide 4"></button>
         </div>
       </div>
     </div>
