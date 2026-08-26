@@ -1374,13 +1374,21 @@ p {
   font-size: var(--text-sm);
 }
 
-.contact-info__card a {
+.contact-info__handle {
   color: var(--burgundy);
   font-weight: 500;
 }
 
-.contact-info__card a:hover {
+a.contact-info__card {
+  cursor: pointer;
+}
+
+a.contact-info__card:hover .contact-info__handle {
   text-decoration: underline;
+}
+
+a.contact-info__card:hover .contact-info__icon {
+  background: var(--burgundy-dark);
 }
 
 .contact-global {
