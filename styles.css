@@ -1714,7 +1714,7 @@ a.contact-info__card:hover .contact-info__icon {
   .navbar__links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 80%;
     max-width: 320px;
     height: 100vh;
@@ -1724,11 +1724,12 @@ a.contact-info__card:hover .contact-info__icon {
     padding: var(--space-2xl);
     gap: var(--space-xl);
     box-shadow: var(--shadow-xl);
-    transition: right var(--transition-base);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
   }
 
   .navbar__links.open {
-    right: 0;
+    transform: translateX(0);
   }
 
   .navbar__toggle {
