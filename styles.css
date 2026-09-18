@@ -627,73 +627,9 @@ p {
   flex-wrap: wrap;
 }
 
-/* ---- Hero entrance animation: text slides in slowly from left/right on load ---- */
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-120px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(120px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.hero__quote {
-  opacity: 0;
-  animation: slideInFromLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-}
-
-.hero__kicker-a {
-  opacity: 0;
-  animation: slideInFromLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
-}
-
-.hero__kicker-b {
-  opacity: 0;
-  animation: slideInFromRight 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.75s forwards;
-}
-
-.hero h1 {
-  opacity: 0;
-  animation: slideInFromLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1s forwards;
-}
-
-.hero__subtitle {
-  opacity: 0;
-  animation: slideInFromRight 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.25s forwards;
-}
-
-.hero__actions {
-  opacity: 0;
-  animation: slideInFromLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.5s forwards;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hero {
     animation: none;
-  }
-
-  .hero__quote,
-  .hero__kicker-a,
-  .hero__kicker-b,
-  .hero h1,
-  .hero__subtitle,
-  .hero__actions {
-    animation: none;
-    opacity: 1;
-    transform: none;
   }
 }
 
