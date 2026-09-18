@@ -1203,6 +1203,30 @@ p {
   border-radius: var(--radius-full);
 }
 
+/* ---- Carousel dark variant (for use on burgundy/dark sections) ---- */
+.carousel--dark .carousel__arrow {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.carousel--dark .carousel__arrow:hover {
+  background: var(--gold);
+  color: var(--burgundy);
+}
+
+.carousel--dark .carousel__dot {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.carousel--dark .carousel__dot.active {
+  background: var(--gold);
+}
+
+.carousel--dark .why-us__card {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .carousel__arrow--prev {
     left: 4px;
